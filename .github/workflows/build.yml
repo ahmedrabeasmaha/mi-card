@@ -20,7 +20,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '2.15.1'  # Specify a valid Flutter version
+          flutter-version: '3.3.0'  # Specify a valid Flutter version
 # Specify a valid Flutter version
 
       # Install dependencies and build the Flutter project
