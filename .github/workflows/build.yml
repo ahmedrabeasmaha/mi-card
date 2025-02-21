@@ -14,13 +14,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for better relevancy of analysis
+          fetch-depth: 0
 
-      # Set up Flutter environment
+      # Set up Flutter with a specific version
       - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: 'stable'
+        uses: subosito/flutter-action@v2 # Specify a valid Flutter version
 
       # Install dependencies and build the Flutter project
       - name: Install dependencies and build Flutter project
